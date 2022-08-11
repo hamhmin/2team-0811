@@ -1,0 +1,101 @@
+@import url('./mobile-reset.css');
+
+/* ---------<header>--------- */
+
+.title-img{
+    position: relative;
+}
+#info .info_container .title-img img {
+    width: 100vw;
+    height: 96px;
+    margin-top: 70px;
+}
+#info #title .title-img h1 {
+    position: absolute;
+    z-index: 999;
+    top: calc(50% + 20px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    width: 100vw;
+    color: #FFFFFF;
+}
+
+
+/* none */
+
+#info .info_container .nav-implant{
+    display: none;
+}
+
+/*------------------<main>---------------- */
+#info h3,
+h2,
+h4 {
+    color: var(--main-color);
+}
+
+#info h3,
+h2 {
+    text-align: center;
+}
+
+#info .info_clinic  {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+}
+
+#info .info_doctor {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+#info .info_doctor .doctor_col img {
+    width: 40vw;
+}
+
+#info .doctor_col:nth-child(3) ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container .tag {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container span {
+    font-weight: 500;
+    color: #333333;
+}
+
+#info .doctor_col ul .doctor_box .doctor_box_container .comment {
+    color: var(--main-color);
+}
+
+#info .doctor_col .doctor_box_container {
+    position: relative;
+    box-sizing: border-box;
+    border-top: 3px solid var(--main-color);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    background-color: #f8f8f8;
+    min-width: 250px;
+    padding: 30px;
+}
+
+#info .doctor_col .doctor_box_container {
+    line-height: 30px;
+}
