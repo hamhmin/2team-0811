@@ -71,7 +71,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99999999;
+    z-index: 99999999999;
     border-bottom: var(--main-color) 2px solid;
     background-color: #fff;
   }
@@ -160,7 +160,6 @@ html {
 /* footer */
 footer  {
     box-sizing: border-box;
-
     position: relative;
     width: 100vw;
     height: 354px;
