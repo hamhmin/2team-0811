@@ -74,10 +74,11 @@ html {
     z-index: 99999999999;
     border-bottom: var(--main-color) 2px solid;
     background-color: #fff;
+    padding: 0 60px;
   }
   
   header .logo {
-    padding: 60px;
+    padding: 60px 0;
   }
   
   header nav ul {
@@ -95,6 +96,7 @@ html {
     padding-top: 10px;
     line-height: 45px;
     cursor: pointer;
+    
   }
   
   header nav ul li .depth2 {
@@ -159,55 +161,34 @@ html {
 
 /* footer */
 footer  {
-    box-sizing: border-box;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
-    height: 354px;
-    left: 0px;
-    bottom: 0;
-    z-index: 5000;
+    height: 264px;
     background: #FFFFFF;
     border-top: 1px solid #BCBCBC;
+    padding: 30px 60px;
 }
 footer img{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%);
-    line-height: 354px;
+width: 200px;
+height: 50px;
 }
 footer p {
-    position: absolute;
-    width: 899px;
-    height: 140px;
-    left: 40%;
-    top: 99px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 35px;
-
     color: #BCBCBC;
 }
 
 footer a .bi-instagram {
-    position: absolute;
-    right: 10.1%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
+    font-size: 28px;
+    margin-right: 20px;
 }
 
 footer a .bi-twitter {
-    position: absolute;
-    right: 5.26%;
-    top: 42.94%;
-    bottom: 45.76%;
-    font-size: 50px;
+    font-size: 28px;
 }
-
 footer .bi{
     color: #666;
 }

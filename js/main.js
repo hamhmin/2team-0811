@@ -67,3 +67,17 @@ $(document).ready(function(){
   
     });
 })
+
+
+
+$(function(){
+  $(window).scroll(function(){
+    var scrollPosition = $(window).scrollTop();
+    console.log(scrollPosition);
+    if( scrollPosition >= 600 ){
+      $('#fixed-menu').stop().slideDown();
+    } else {
+      $('#fixed-menu').stop().slideUp();
+    }
+  });
+});

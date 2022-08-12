@@ -510,8 +510,10 @@
 
 #fixed-menu {
     z-index: 3;
+    display: none;
     position: fixed;
     bottom: 0;
+    right: 0;
     /* justify-content: start;
     display: flex;
     flex-direction: column;
@@ -520,8 +522,8 @@
   }
   
   #fixed-menu .col{
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     background: var(--main-color);
     border-bottom: 1px solid #fff;
     color: #fff;
@@ -538,11 +540,11 @@
   }
   
   #fixed-menu .col .fixed-container img {
-    width: 42px;
-    margin-bottom: 16px;
+    width: 30px;
+    margin-bottom: 12px;
   }
   
   #fixed-menu .col .fixed-container p {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
   }
