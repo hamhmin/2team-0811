@@ -1,14 +1,22 @@
-@import url('./pc-reset.css');
+@import url("./pc-reset.css");
+@import url('style.css');
 
+#info {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#info header .bi {
+    display: none;
+}
 #title {
-    width: 100vw;
+    width: 100%;
     height: 420px;
 }
+
 #info .title-img img {
     width: 100vw;
     height: 420px;
     margin-top: 90px;
-    object-fit: cover;
 }
 
 #info .title-img h1 {
@@ -29,18 +37,18 @@
     -o-transform: translateX(-50%);
 }
 
-#info .nav-implant {
+#info .nav-info {
     position: relative;
 }
 
-#info .nav-implant ul {
+#info .nav-info ul {
     position: absolute;
     display: flex;
     bottom: 3px;
     width: 100%;
 }
 
-#info .nav-implant ul li {
+#info .nav-info ul li {
     width: calc(100% / 2);
     height: 70px;
     background: rgba(0, 0, 0, 0.5);
@@ -52,11 +60,11 @@
     color: #FFFFFF;
 }
 
-#info .nav-implant ul li:first-child {
+#info .nav-info ul li:first-child {
     border-right: none;
 }
 
-#info .nav-implant .on {
+#info .nav-info .on {
     background: rgba(26, 160, 165, 0.9);
 }
 
@@ -82,8 +90,6 @@ h4 {
     padding: 10px;
     border-bottom: 2px solid var(--main-color);
     text-align: center;
-
-
 }
 
 #info .info_clinic_background {
@@ -128,6 +134,7 @@ h4 {
 /* 의료진 사진 */
 #info .info_doctor ul li img {
     width: 70%;
+    min-width: 300px;
 }
 
 #info .info_doctor {
@@ -177,14 +184,42 @@ h4 {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     color: #333333;
     background-color: #f8f8f8;
-    min-width: 440px;
+    min-width: 450px;
 }
 
 #info .doctor_col ul .doctor_box .doctor_box_container p {
     line-height: 40px;
 }
 
+#info .doctor_col ul .doctor_box .doctor_box_container:nth-child(1) p:nth-child(2) {
+    line-height: 30px;
+}
+
 #info .doctor_col .doctor_box .doctor_box_container {
-    padding-left: 60px;
-    padding-right: 70px;
+    padding: 20px 50px 20px 60px;
+}
+
+#info .doctor_col .doctor_box_container p {
+    padding-top: 10px;
+}
+
+#info .doctor_box:nth-child(1) {
+    margin-right: 20rem;
+}
+
+/* ------<tab event>------ */
+#info .info_container .tab_clinic.on {
+    background-color: var(--main-color);
+}
+
+#info .info_container .tab_clinic {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#info .info_container .tab_doctor.on {
+    background-color: var(--main-color);
+}
+
+#info .info_container .tab_doctor {
+    background-color: rgba(0, 0, 0, 0.5);
 }

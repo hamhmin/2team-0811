@@ -1,22 +1,57 @@
-@import url('./mobile-reset.css');
+@import url("./mobile-reset.css");
 
 /* ---------<header>--------- */
-
-.title-img{
-    position: relative;
+#info .logo img,
+.logo a {
+    display: block;
+    width: 150px;
+    height: 35px;
 }
-#info .info_container .title-img img {
+
+#info header {
     width: 100vw;
-    height: 96px;
+    height: 70px;
+    position: fixed;
+    z-index: 99999999;
+    border-bottom: var(--main-color) 2px solid;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#info header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#info header .gnb-toggle {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#info .info_container .title-img img {
+    height: 100px;
+    width: 100vw;
     margin-top: 70px;
 }
+
 #info #title .title-img h1 {
     position: absolute;
     z-index: 999;
-    top: calc(50% + 20px);
+    top: 110px;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
     width: 100vw;
     color: #FFFFFF;
@@ -24,12 +59,15 @@
 
 
 /* none */
-
-#info .info_container .nav-implant{
+#info .info_container .nav-info ul li{
     display: none;
 }
 
 /*------------------<main>---------------- */
+
+#info {
+    font-family: 'Noto Sans KR';
+}
 #info h3,
 h2,
 h4 {
@@ -41,15 +79,38 @@ h2 {
     text-align: center;
 }
 
+#info h2 {
+    padding:5px;
+    border-bottom: 2px solid var(--main-color);
+}
 #info .info_clinic  {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     gap: 15px;
+    padding: 50px;
+    line-height: 25px;
+}
 
+#info .info_clinic p {
+    margin-top: 10px;
+}
+
+#info .info_clinic .info_clinic_background .info_col{
+    margin-top: 60px;
+    /* white-space:nowrap; */
+    max-width: 70vw;
+} 
+
+#info .info_clinic .info_clinic_background .info_col img {
+    width: 80vw;
+    max-width: 280px;
+}
+
+#info .info_clinic .info_clinic_background .info_col:nth-child(2) img{
+    max-width: 220px;
 }
 
 #info .info_doctor {
@@ -63,7 +124,8 @@ h2 {
 }
 
 #info .info_doctor .doctor_col img {
-    width: 40vw;
+    width: 30vw;
+    max-width: 400px;
 }
 
 #info .doctor_col:nth-child(3) ul {
@@ -93,9 +155,15 @@ h2 {
     color: #333333;
     background-color: #f8f8f8;
     min-width: 250px;
+    max-width: 400px;
     padding: 30px;
+    margin: 30px 0 ;
 }
 
 #info .doctor_col .doctor_box_container {
     line-height: 30px;
+}
+
+#info .doctor_col .doctor_box_container p {
+    padding: 10px;
 }

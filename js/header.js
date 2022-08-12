@@ -19,4 +19,31 @@ $(function () {
         // $('#gnb').css('display','none');
         $('#gnb').slideUp();
     });
+
+
+
+// info 
+    $('#info .info_container .tab_doctor').click(function () {
+        $('#info .info_container .tab_doctor').addClass('on');
+        $('#info .info_container .tab_clinic').removeClass('on');
+    });
+    $('#info .info_container .tab_clinic').click(function () {
+        $('#info .info_container .tab_doctor').removeClass('on');
+        $('#info .info_container .tab_clinic').addClass('on');
+    });
+
+
+
+
   });
+
+
+//  info scrollclinic()
+function scrollclinic() {
+    window.scrollTo(0, 500);
+}
+
+
+function scrolldoctor() {
+    window.scrollTo(0, 1300);
+}
