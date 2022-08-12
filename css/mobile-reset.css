@@ -163,8 +163,11 @@ html {
 
   /* 모바일은 1440px이 아님. 문제시 수정 */
   .container- {
-    width: 1440px;
+    max-width: 768px;
+    width: 100%;
     margin: 0 auto;
+    /* outline: 1px solid red; */
+    /* background: rgb(169, 169, 169); */
     background: #fff;
   }
 
