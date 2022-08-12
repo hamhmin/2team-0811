@@ -38,6 +38,7 @@ main{
 
 .nav-implant{
     position: relative;
+    display: none;
 }
 
 .nav-implant ul{
@@ -72,25 +73,24 @@ main{
     align-items: center;
 }
 .container1 h2 {
-    width: 155px;
-    height: 23px;
+    width: 245px;
     margin-top: 50px;
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 24px;
     text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
 }
-
+.container .hi{
+}
 .container1 .strengths {
     width: 100vw;
     height: 210px;
-    padding-top: 30px;
+    padding: 30px 0;
     font-weight: 300;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 25px;
     background: #F8F8F8;
     border-top: 1px solid #1AA0A5;
     color: #333333;
@@ -111,13 +111,10 @@ main{
     align-items: center;
 }
 .container2 h2 {
-    width: 155px;
-    height: 23px;
     margin-top: 50px;
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 24px;
     text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
@@ -157,12 +154,9 @@ main{
     margin-bottom: 50px;
 }
 .container3 h2 {
-    width: 173px;
-    height: 23px;    
     margin-top: 50px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 24px;
     text-align: center;
     color: #1AA0A5;
     border-bottom: 2px solid #1AA0A5;
@@ -174,7 +168,11 @@ main{
     align-items: center;
     margin-top: 50px;
     gap: 20px;
+    text-align: center;
     }
+.container3 .col p{
+    line-height: 25px;
+}
 .container3 .col1 img {
     width: 160px;
     height: 160px;
@@ -185,7 +183,6 @@ main{
     height: 36px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 20px;
     color: #333333;
 }
 .container3 .col2{
@@ -202,7 +199,6 @@ main{
     height: 40px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 20px;
     color: #333333;
 }
 
@@ -216,7 +212,6 @@ main{
     height: 54px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 20px;
     color: #333333;
 }
 

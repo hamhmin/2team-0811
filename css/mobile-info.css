@@ -37,9 +37,8 @@
     font-size: 32px;
     cursor: pointer;
 }
-
 #info .info_container .title-img img {
-    height: 100px;
+    height: 96px;
     width: 100vw;
     margin-top: 70px;
 }
@@ -97,13 +96,20 @@ h2 {
 #info .info_clinic p {
     margin-top: 10px;
 }
-
+#info .info_clinic h2{
+    font-size: 24px;
+}
 #info .info_clinic .info_clinic_background .info_col{
     margin-top: 60px;
     /* white-space:nowrap; */
-    max-width: 70vw;
+    word-break: keep-all;
 } 
-
+.info_col p{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 14px;
+}
 #info .info_clinic .info_clinic_background .info_col img {
     width: 80vw;
     max-width: 280px;
