@@ -3,47 +3,52 @@
 
 #title{
     width: 100vw;
-    height: 420px;
+    height: 280px;
 }
 .title-img img {
     width: 100vw;
-    height: 420px;
+    height: 280px;
     margin-top: 90px;
     object-fit: cover;
 }
 
 .title-img h1 {
     position: absolute;
-    top: 228px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Noto Sans KR',sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
     color: #fff;
 }
+
 .nav-implant{
     position: relative;
 }
+
 .nav-implant ul{
     position: absolute;
     display: flex;
     bottom: 3px;
     width: 100%;
 }
+
 .nav-implant ul li {
     width: calc(100% / 2);
-    height: 70px;
+    height: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 66px;
+    font-size: 18px;
+    line-height: 48px;
     text-align: center;
     color: #FFFFFF;
 }
+
+
 .nav-implant .on {
     background: rgba(26, 160, 165, 0.9);
 }

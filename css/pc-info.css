@@ -7,27 +7,29 @@
 #info header .bi {
     display: none;
 }
+
+
 #title {
     width: 100%;
-    height: 420px;
+    height: 280px;
 }
 
 #info .title-img img {
     width: 100vw;
-    height: 420px;
+    height: 280px;
     margin-top: 90px;
 }
 
 #info .title-img h1 {
     position: absolute;
-    top: 228px;
+    top: 180px;
     left: 50%;
     letter-spacing: 0.1rem;
     transform: translateX(-50%);
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
     color: #fff;
     -webkit-transform: translateX(-50%);
@@ -49,15 +51,16 @@
 
 #info .nav-info ul li {
     width: calc(100% / 2);
-    height: 70px;
+    height: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     letter-spacing: 0.1rem;
-    font-size: 22px;
-    line-height: 66px;
+    font-size: 18px;
+    line-height: 48px;
     text-align: center;
     color: #FFFFFF;
 }
+
 
 #info .nav-info ul li:first-child {
     border-right: none;

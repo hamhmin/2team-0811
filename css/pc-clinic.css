@@ -4,26 +4,28 @@
 
 #title{
     width: 100vw;
-    height: 420px;
+    height: 280px;
 }
 
 .title-img img {
     width: 100vw;
-    height: 420px;
+    height: 280px;
     margin-top: 90px;
     object-fit: cover;
 }
 
+
 .title-img h1 {
     position: absolute;
-    top: 228px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
     color: #ffffff;
 }
+
 
 
 
@@ -47,15 +49,17 @@ main{
 
 .nav-implant ul li {
     width: calc(100% / 4);
-    height: 70px;
+    height: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #FFFFFF;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 66px;
+    font-size: 18px;
+    line-height: 48px;
     text-align: center;
     color: #FFFFFF;
 }
+
+
 
 .nav-implant .on {
     background: rgba(26, 160, 165, 0.9);
@@ -101,9 +105,10 @@ main{
 .container1 .strengths {
     width: 1440px;
     height: 293px;
-    padding-top: 30px;
+    padding: 55px 0;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 30px;
     background: #F8F8F8;
     border-top: 1px solid #1AA0A5;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -147,7 +152,7 @@ main{
     width: 497px;
     margin-bottom: 100px;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 43px;
     color: #1AA0A5;
 }
@@ -156,7 +161,7 @@ main{
     width: 497px;
     height: 313px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
     color: #333333;
 }
@@ -197,7 +202,7 @@ height: 380px;
     height: 64px;
     margin-left: 150px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
     color: #333333;
 }
@@ -206,7 +211,7 @@ height: 380px;
     width: 430px;
     height: 64px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
 
     color: #333333;
@@ -228,7 +233,7 @@ height: 380px;
     height: 96px;
     margin-left: 150px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
     color: #333333;
 }
