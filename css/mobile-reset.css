@@ -78,6 +78,7 @@ html {
     height: 70px;
     position: fixed;
     z-index: 99999999;
+    top: 0;
     border-bottom: var(--main-color) 2px solid;
     background-color: #fff;
     padding: 20px;

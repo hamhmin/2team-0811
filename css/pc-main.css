@@ -1,37 +1,39 @@
-@import url("./pc-reset.css");
+@import url(./pc-reset.css);
+@import url(./style.css);
+
 
 
 
 /****** main-visual slider ***/
+
 #main-visual {
     overflow: hidden;
+    padding-top: 90px;
 }
 
 #main-visual .container {
-    width: 100vw;
-    height: 100vh;
     background: #fff;
     z-index: 999999;
+    height: 100vh;
 }
 
-#main-visual .swiper-container {
-    width: 100vw;
+#main-visual .swiper .swiper-slide {
+    position: relative;
+}
+
+#main-visual .swiper .swiper-slide img {
+    width: 100%;
     height: 100%;
-  }
+}
 
-#main-visual .swiper-container .swoper-slide img {
-    height: 100vh;
-  }
-
-#main-visual .swiper-container .swiper-wrapper {
+#main-visual .swiper .swiper-wrapper {
     display: flex;
-    z-index: 9999999;
 }
 
 #main-visual .swiper-button-prev {
     color: #fff;
     padding-left: 50px;
-    z-index: 999999999;
+    z-index: 999999999999999;
 }
 
 #main-visual .swiper-button-next {
@@ -40,10 +42,11 @@
     z-index: 999999999;
 }
 
-#main-visual .swiper-scrollbar {
-    position: relative;
-    background: transparent;
-    top: -26px;
+#main-visual .swiper-pagination {
+    z-index: 999999999999;
+    /* background: transparent; */
+    /* position: absolute; */
+    bottom: -200px;
 }
 
 #main-visual-mobile {
@@ -54,17 +57,20 @@
 
 
 
+
+
+
 /******** dental-clinic **/
 
 #dental-clinic .clinic-containers {
     display: flex;
-
-    width: 1440px;
-    margin: 0 auto;
     margin-top: 100px;
+    width: 100%;
+    object-fit: cover;
 }
 
-#dental-clinic .container-, .container--{
+
+#dental-clinic .container01, .container02{
     display: flex;
     margin-top: 53px;
     justify-content: center;
@@ -73,8 +79,36 @@
     
 }
 
+#dental-clinic .container01 .box01 {
+    background-image: url(../images/dental-clinic\ 01.jpg);
+    background-size: contain;
+    width: 269px;
+    height: 269px;
+}
 
-#dental-clinic .container- .clinic-box {
+#dental-clinic .container01 .box02 {
+    background-image: url(../images/dental-clinic\ 02.jpg);
+    background-size: contain;
+    width: 269px;
+    height: 269px;
+}
+
+#dental-clinic .container02 .box03 {
+    background-image: url(../images/dental-clinic\ 03.jpg);
+    background-size: contain;
+    width: 269px;
+    height: 269px;
+}
+
+#dental-clinic .container02 .box04 {
+    background-image: url(../images/dental-clinic\ 04.jpg);
+    background-size: contain;
+    width: 269px;
+    height: 269px;
+}
+
+
+#dental-clinic .container01 .clinic-box {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -85,7 +119,7 @@
     z-index: 2;
 }
 
-#dental-clinic .container-- .clinic-box {
+#dental-clinic .container02 .clinic-box {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -96,48 +130,79 @@
     margin: auto;
 }
 
-#dental-clinic .container- .clinic-box .text {
+#dental-clinic .container01 .clinic-box .text {
     position: absolute;
     text-align: center;
     color: #fff;
 }
 
-#dental-clinic .container-- .clinic-box .text {
+#dental-clinic .container02 .clinic-box .text {
     position: absolute;
     text-align: center;
     color: #fff;
 }
 
-#dental-clinic .container- .clinic-box .text p {
+#dental-clinic .container01 .clinic-box .text p {
     font-size: 20px;
     padding-bottom: 16px;
 }
 
-#dental-clinic .container-- .clinic-box .text p {
+#dental-clinic .container02 .clinic-box .text p {
     font-size: 20px;
     padding-bottom: 16px;
 }
 
 
-#dental-clinic .container- .clinic-box .text h3 {
+#dental-clinic .container01 .clinic-box .text h3 {
     font-size: 32px;
     margin-bottom: 19px;
 }
 
-#dental-clinic .container-- .clinic-box .text h3 {
+#dental-clinic .container02 .clinic-box .text h3 {
     font-size: 32px;
     margin-bottom: 19px;
 }
 
-#dental-clinic .container- .clinic-box .text a {
+#dental-clinic .container01 .clinic-box .text a {
     color: #fff;
     font-size: 20px;
 }
 
-#dental-clinic .container-- .clinic-box .text a {
+#dental-clinic .container02 .clinic-box .text a {
     color: #fff;
     font-size: 20px;
 }
+
+/*** dental-clibic hover ***/
+
+#dental-clinic .container01 .box01:hover {
+    background-image: url(../images/dental-clinic\ 01\ hover.jpeg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#dental-clinic .container01 .box02:hover {
+    background-image: url(../images/dental-clinic\ 02\ hover.jpeg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#dental-clinic .container02 .box03:hover {
+    background-image: url(../images/dental-clinic\ 03\ hover.jpeg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#dental-clinic .container02 .box04:hover {
+    background-image: url(../images/dental-clinic\ 04\ hover.jpeg);
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 
 
@@ -175,11 +240,15 @@
 }
 
 #doctor-about .about-text p {
-    text-align-last: left;
+    text-align-last: center;
     font-size: 20px;
     margin-bottom: 111px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
+
+/* #doctor-about img {
+    width: 80%;
+} */
 
 #doctor-about .about-btn {
     width: 348px;
@@ -201,6 +270,9 @@
 
 
 
+
+
+
 /******* medical **/
 
 #medical-mobile {
@@ -210,14 +282,18 @@
 #medical {
     display: flex;
     flex-direction: column;
-    background: var(--sub-color01);
     margin-bottom: 100px;
+    background: #E3F4F1;
+}
 
-
+#medical > .container- {
+    background: #E3F4F1;
 }
 
 #medical .medical-title {
-    margin-top: 233px;
+    margin-top: 150px;
+    width: 100%;
+    background: #E3F4F1;
 }
 
 #medical .medical-title hr {
@@ -233,14 +309,14 @@
 
 #medical .medical-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
 }
 
 #medical .col {
     display: flex;
     flex-direction: column;
-    width: 369px;
+    width: 375px;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 63px;
@@ -253,16 +329,16 @@
 }
 
 #medical .text h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 65px;
-    margin-bottom: 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #medical .text p  {
     text-align: left;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 #medical .medical-container- {
@@ -275,7 +351,7 @@
 
 #medical .medical-btn {
     background: var(--main-color);
-    border: 3px solid #fff;
+    /* border: 3px solid #fff; */
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 40px;
@@ -288,8 +364,10 @@
 
 #medical .medical-btn a {
     color: #fff;
-    font-size: 32px;
+    font-size: 24px;
 }
+
+
 
 
 
@@ -299,13 +377,6 @@
 
 
 /******* sub-banner **/
-
-#sub-banner .col p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 #sub-banner .col {
     background-image: url(../images/sub-banner.jpeg);
@@ -318,17 +389,17 @@
 }
 
 #sub-banner .col .text p {
-    margin-top: 30px;
     text-align: center;
     color: #fff;
     font-size: 36px;
-    padding: 70px;
     line-height: 50px;
     
 }
 
 #sub-banner .col .text span {
-    font-size: 90px;
+    font-size: 80px;
+    padding:auto;
+
 }
 
 
@@ -346,10 +417,11 @@
 #recommend {
     margin-top: 100px;
     background-image: url(../images/recommend-bg.jpeg);
-    height: calc(100vh - 50px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 #recommend .recommend-title {
@@ -372,15 +444,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
-    margin: 0 auto;
 }
 
 #recommend .col {
     width: 286px;
     height: 362px;
     border: 1px solid var(--main-color);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.168);
     border-top: 7px solid var(--main-color);
     display: flex;
     flex-direction: column;
@@ -388,6 +458,12 @@
     justify-content: center;
     margin-left: 50px;
     margin-right: 49px;
+}
+
+#recommend .col:hover {
+    transform: scale(1.1);
+    background: #fff;
+    border: 5px solid var(--main-color);
 }
 
 #recommend .col h3 {
@@ -415,9 +491,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background-size: contain;
-    background-attachment: fixed;
 }
 
 #academy .academy-box {
@@ -437,22 +510,21 @@
 
 
 
+
+
+
 /******* sub-footer **/
 
 #sub-footer {
     background-image: url(../images/sub-footer-bg.jpeg);
     height: 456px;
-    overflow: hidden;
-    background-size: contain;
-    background-attachment: fixed;
     color: #fff;
     display: flex;
-    justify-content: center;
 }
 
 #sub-footer .time {
     /* outline: 1px solid red; */
-    width: 720px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,56 +532,59 @@
 
 #sub-footer .time h2 {
     /* margin-top: 60px; */
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 29px;
 }
 
 #sub-footer .time .time-text {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
 }
 
 #sub-footer .time .time-text p {
-    font-size: 20px;
-    line-height: 63px;
-    height: 63px;
+    font-size: 24px;
 }
 
 #sub-footer .call {
-    width: 720px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #sub-footer .call h2 {
-    font-size: 30px;
-    height: 55px;
+    font-size: 40px;
+    padding: 30px;
 }
 
 #sub-footer .call-btn {
     background: rgba(255, 255, 255, 0.537);
     border: 1px solid #fff;
-    border-radius: 100px;
+    border-radius: 50px;
+    margin-top: 24px;
 }
-
 
 #sub-footer .call-btn p {
     color: var(--text-color01);
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 80px;
     padding-right: 80px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #sub-footer .call-btn p:hover {
     color: var(--main-color);
     font-weight: 600;
 }
+
+
+
 
 
 

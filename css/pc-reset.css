@@ -152,12 +152,12 @@ html {
     color: #fff;
   }
 
-  /* container ?*/
-.container {
+
+  /* container*/
+  .container {
     width: 100vw;
       margin: 0 auto;
       /* outline: 1px solid red; */
-      background: #fff;
   }
 
   .container- {
@@ -165,8 +165,8 @@ html {
     margin: 0 auto;
     /* outline: 1px solid red; */
     /* background: rgb(169, 169, 169); */
-    background: #fff;
   }
+
 
 /* footer */
 footer  {
