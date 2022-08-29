@@ -55,9 +55,7 @@
 
 
 
-
-
-
+  
 
 
 /******** dental-clinic **/
@@ -417,6 +415,7 @@
 #recommend {
     margin-top: 100px;
     background-image: url(../images/recommend-bg.jpeg);
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -524,10 +523,11 @@
 
 #sub-footer .time {
     /* outline: 1px solid red; */
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #sub-footer .time h2 {
@@ -538,19 +538,27 @@
 }
 
 #sub-footer .time .time-text {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 40px;
 }
 
 #sub-footer .time .time-text p {
     font-size: 24px;
+    width: 50%;
+}
+#sub-footer .time .time-text p:nth-child(1) {
+width: 30%;
+padding-left: 4vw;
+}
+#sub-footer .time .time-text p:nth-child(2){
+    padding-left: 4vw;
 }
 
 #sub-footer .call {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
